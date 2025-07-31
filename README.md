@@ -1,5 +1,4 @@
-# Mini-Projects
- Mini Projects  | HTML • CSS • JavaScript • APIs</br>
+Mini Projects  | HTML • CSS • JavaScript • APIs</br></br>
 I’ve been actively building multiple mini web projects to strengthen my frontend skills.<br>These projects include Real-time data fetching using APIs and responsive designs.
 
 Each project helped me dive deeper into DOM manipulation, asynchronous JavaScript, and clean UI/UX design principles.
