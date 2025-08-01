@@ -3,12 +3,12 @@
 
 • Each project helped me dive deeper into DOM manipulation, asynchronous JavaScript, and clean UI/UX design principles.
 
-<b>1.Cat-facts: </b>
+<b>1.Cat-facts: </b><br>
 A fun mini project that fetches and displays random cat facts using a public API.<br> It’s a simple yet engaging way to practice API integration and DOM manipulation with vanilla JavaScript.
 
 ![image alt](https://github.com/BinaySharma25/Mini-Projects/blob/main/Cat-Facts/Cat-facts.png?raw=true)
 <br><br>
-<b>2.Random Dog Images</b>
+<b>2.Random Dog Images: </b><br>
  A fun app that displays random dog images using the Dog CEO API. With just one click, users can see a new adorable dog photo every time — fetched in real-time from the API.
 
  ![image alt](https://github.com/BinaySharma25/Mini-Projects/blob/main/Random%20Dog%20Images/Random%20Dog%20Images.png?raw=true)
