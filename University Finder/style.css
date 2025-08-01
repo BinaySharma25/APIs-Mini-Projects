@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    font-weight: 300;
+}
+
+.search-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+input {
+    padding: 12px 20px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+    width: 300px;
+    min-width: 200px;
+}
+
+input:focus {
+    border-color: #667eea;
+}
+
+button {
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    white-space: nowrap;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+#list {
+    list-style: none;
+    text-align: left;
+    max-height: 400px;
+    overflow-y: auto;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+
+#list::-webkit-scrollbar {
+    display: none; 
+}
+
+#list li {
+    padding: 15px 20px;
+    margin: 10px 0;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border-left: 4px solid #667eea;
+    transition: all 0.3s;
+}
+
+#list li:hover {
+    background: #e9ecef;
+    transform: translateX(5px);
+}
+
+input::placeholder {
+    color: #666;
+    font-size: 16px;
+}
+
+.university-card {
+    text-align: left;
+}
+
+.university-card h3 {
+    color: #333;
+    margin-bottom: 8px;
+    font-size: 1.2em;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+.university-card p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #666;
+    word-wrap: break-word;
+}
+
+.university-card .country {
+    color: #667eea;
+    font-weight: 500;
+}
+
+.university-card .website a {
+    color: #28a745;
+    text-decoration: none;
+    word-break: break-all;
+}
+
+.university-card .website a:hover {
+    text-decoration: underline;
+}
+
+.university-card .domain {
+    color: #6c757d;
+    font-style: italic;
+}
+
+.loading {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+}
+
+.error {
+    color: #dc3545;
+    text-align: center;
+    padding: 20px;
+    background: #f8d7da;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.no-results {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    
+    .search-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    input {
+        width: 100%;
+        max-width: 300px;
+        min-width: auto;
+    }
+    
+    button {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    #list {
+        max-height: 300px;
+    }
+    
+    #list li {
+        padding: 12px 15px;
+        margin: 8px 0;
+    }
+    
+    .university-card h3 {
+        font-size: 1.1em;
+    }
+    
+    .university-card p {
+        font-size: 0.85em;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+    
+    .container {
+        padding: 15px;
+        border-radius: 10px;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+    
+    input {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    #list li {
+        padding: 10px 12px;
+        margin: 6px 0;
+    }
+    
+    .university-card h3 {
+        font-size: 1em;
+    }
+    
+    .university-card p {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 320px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    input, button {
+        font-size: 13px;
+    }
+    
+    .university-card h3 {
+        font-size: 0.95em;
+    }
+    
+    .university-card p {
+        font-size: 0.75em;
+    }
+}
